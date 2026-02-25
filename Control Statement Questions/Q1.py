@@ -1,57 +1,8 @@
-#using match case
+s1= float(input("Enter the first side : "))
+s2= float(input("Enter the second side : "))
+s3= float(input("Enter the third side : "))
 
-month=input("Enter the month number : ")
-match month:
-    case "1":
-        print("31")
-    case "2":
-        print("28")
-    case "3":
-        print("31")
-    case "4":
-        print("30")
-    case "5":
-        print("31")
-    case "6":
-        print("30")
-    case "7":
-        print("31")
-    
-    case "8":
-        print("31")
-    case "9":
-        print("30")
-    case "10":
-        print("31")
-    case "11":
-        print("30")
-    case "12":
-        print("31")
-
-
-#using elif ladder
-month=int(input("Enter the month number : "))
-if month==1:
-    print(31)
-elif month==2:
-    print(28)
-elif month==3:
-    print(31)
-elif month==4:
-    print(30)
-elif month==5:
-    print(31)
-elif month==6:
-    print(30)
-elif month==7:
-    print(31)
-elif month==8:
-    print(31)
-elif month==9:
-    print(30)
-elif month==10:
-    print(31)
-elif month==11:
-    print(30)
-elif month==12:
-    print(31)
+if s1==s2==s3:
+    print("It is an equilateral triangle")
+else:
+    print("It is not an equilateral triangle")
