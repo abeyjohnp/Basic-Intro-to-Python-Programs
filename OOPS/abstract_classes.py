@@ -12,3 +12,16 @@ from abc import ABC.abstractmethod
     
 """
 
+from abc import ABC,abstractmethod
+class A(ABC):
+    @abstractmethod
+    def function(self):
+        pass #no executable statement here!
+
+class B(A):
+    def function(self):
+        print("In B")
+
+#o=A() #you cannot create an object of Abstract class!
+o=B()
+o.function()
