@@ -9,3 +9,5 @@ i.save() to save the image, i.save(Filename) that file will be saved in that fil
 
 this is the image module
 only basic mathematical stuff we are doing here
+
+we set the pixel using setpixel
