@@ -2,26 +2,24 @@
     Write Python GUI program to take the birth date and output the age when a button is
 pressed.
 """
-
-"design a python gui that takes user input for length and width of a rectangle, if a button pressed area is calculated"
-
+from datetime import date
 from breezypythongui import EasyFrame
 class buttondemo(EasyFrame):
     def __init__(self):
         EasyFrame.__init__(self)
         self.setSize(width=500, height=200)
-        self.label=self.addLabel(text="Enter the width : ",row=0,column=0)
-        self.inputFld1=self.addTextField(text="",row=0,column=1)
-        self.addLabel(text="Enter the height : ",row=1,column=0)
-        self.inputFld2=self.addTextField(text="",row=1,column=1)
-        self.btn=self.addButton(text="convert",row=2,column=1,command=self.concatenate)
+        self.label=self.addLabel(text="Enter the day : ",row=0,column=0)
+        self.day=self.addTextField(text="",row=0,column=1)
+        self.addLabel(text="Enter the month : ",row=1,column=0)
+        self.month=self.addTextField(text="",row=1,column=1)
+        self.addLabel(text="Enter the year : ",row=2,column=0)
+        self.year=self.addTextField(text="",row=2,column=1)
+        self.btn=self.addButton(text="convert",row=3,column=1,command=self.dob)
     
-    def concatenate(self):
-        self.label=self.addLabel(text="Output : ",row=3,column=0)
-        t1=self.inputFld1.getText()
-        t2=self.inputFld2.getText()
-        t3=int(t1)*int(t2)
-        self.output=self.addTextField(text=t3,row=3,column=1)
+    def dob(self):
+        self.label=self.addLabel(text="Age : ",row=4,column=0)
+        current_year = date.today().year
+        self.output=self.addTextField(text=current_year-int(self.year.getText()),row=4,column=1)
 def main():
     buttondemo().mainloop()
 

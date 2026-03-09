@@ -1,12 +1,17 @@
+from images import Image
 def blackAndWhite(image):
-"""Converts the argument image to black and white."""
-blackPixel = (0, 0, 0)
-whitePixel = (255, 255, 255)
-for y in range(image.getHeight()):
-    for x in range(image.getWidth()):
-    (r, g, b) = image.getPixel(x, y)
-    average = (r + g + b) // 3
-    if average < 128:
-    image.setPixel(x, y, blackPixel)
-    else:
-    image.setPixel(x, y, whitePixel)
+    blackPixel = (0, 0, 0)
+    whitePixel = (255, 255, 255)
+    for y in range(image.getHeight()):
+        for x in range(image.getWidth()):
+            (r, g, b) = image.getPixel(x, y)
+            average = (r + g + b) // 3
+            if average < 128:
+                image.setPixel(x, y, blackPixel)
+            else:
+                image.setPixel(x, y, whitePixel)
+image = Image("example.gif")
+image.draw()
+blackAndWhite(image)
+image.draw()
+
