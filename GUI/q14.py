@@ -2,7 +2,7 @@
     Write Python GUI program to take the birth date and output the age when a button is
 pressed.
 """
-from datetime import date
+from datetime import datetime
 from breezypythongui import EasyFrame
 class buttondemo(EasyFrame):
     def __init__(self):
@@ -18,7 +18,7 @@ class buttondemo(EasyFrame):
     
     def dob(self):
         self.label=self.addLabel(text="Age : ",row=4,column=0)
-        current_year = date.today().year
+        current_year = datetime.now().time
         self.output=self.addTextField(text=current_year-int(self.year.getText()),row=4,column=1)
 def main():
     buttondemo().mainloop()
