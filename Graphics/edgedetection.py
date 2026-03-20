@@ -22,4 +22,4 @@ def detectEdges(image, amount):
 image = Image("example.gif")
 image.draw()
 detectEdges(image,15)
-
+image.draw()

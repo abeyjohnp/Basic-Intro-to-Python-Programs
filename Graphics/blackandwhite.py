@@ -10,8 +10,8 @@ def blackAndWhite(image):
                 image.setPixel(x, y, blackPixel)
             else:
                 image.setPixel(x, y, whitePixel)
+        image.draw()
 image = Image("example.gif")
 image.draw()
 blackAndWhite(image)
 image.draw()
-
