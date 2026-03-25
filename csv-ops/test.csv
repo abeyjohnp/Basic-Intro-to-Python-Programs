@@ -1,11 +1,11 @@
-﻿Name,Mark,Gender,Department
-Alex Rivera,88,Non-binary,Computer Science
-Samantha Chen,94,F,Mathematics
-Marcus Jordan,72,Male,Physics
-Priya Kapoor,91,F,Economics
-Liam O'Connor,65,Male,History
-Zoe Nakamura,83,F,Mechanical Engineering
-Omar Al-Farsi,79,Male,Biology
-Elena Rodriguez,96,F,Chemistry
-Skyler Vance,81,Genderfluid,Fine Arts
-David Smith,58,Male,Psychology
+﻿Name,Mark,Gender,Department,CGPA
+Alex Rivera,88,Non-binary,Computer Science,3.52
+Samantha Chen,94,Female,Mathematics,3.76
+Marcus Jordan,72,Male,Physics,2.88
+Priya Kapoor,91,Female,Economics,3.64
+Liam O'Connor,65,Male,History,2.6
+Zoe Nakamura,83,Female,Mechanical Engineering,3.32
+Omar Al-Farsi,79,Male,Biology,3.16
+Elena Rodriguez,96,Female,Chemistry,3.84
+Skyler Vance,81,Genderfluid,Fine Arts,3.24
+David Smith,58,Male,Psychology,2.32
